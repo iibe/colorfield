@@ -62,27 +62,19 @@ const website = [
     input: "./src/static/index.ts",
     output: {
       file: "./static/scripts/index.js",
-      sourcemap: false,
       format: "cjs",
       plugins: [terser()],
     },
-    plugins: [
-      typescript({ compilerOptions: { declaration: false } }),
-      nodeResolve(),
-    ],
+    plugins: [typescript({ declaration: false }), nodeResolve()],
   },
   {
     input: "./src/static/demo.ts",
     output: {
       file: "./static/scripts/demo.js",
-      sourcemap: false,
       format: "cjs",
       plugins: [terser()],
     },
-    plugins: [
-      typescript({ compilerOptions: { declaration: false } }),
-      nodeResolve(),
-    ],
+    plugins: [typescript({ declaration: false }), nodeResolve()],
   },
 ];
 
