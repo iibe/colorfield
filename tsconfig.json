@@ -1,0 +1,65 @@
+{
+  "compilerOptions": {
+    "diagnostics": false,
+    "extendedDiagnostics": false,
+    "pretty": true,
+
+    // Source code
+    "module": "ES6",
+    "allowJs": true,
+
+    // Source code :: Module imports
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"]
+    },
+
+    // Source code :: Type Cheking
+    "strict": false /* set 'true' to enable all flags below */,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+
+    // Source code :: Type Cheking
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": false,
+
+    // Source code :: Linting
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    // Object code :: Compiling
+    "target": "ES6",
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    // Object code :: Emit
+    "noEmit": false,
+    "alwaysStrict": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "preserveConstEnums": false,
+    "emitDecoratorMetadata": false /* if it set to 'true', then we need to install https://www.npmjs.com/package/reflect-metadata */,
+
+    // Object code :: Completeness
+    "skipLibCheck": true,
+
+    // Object code :: Type definitions
+    "declaration": true,
+    "declarationDir": "./dist/types",
+    "declarationMap": true
+  },
+  "include": ["./src/**/*.ts"],
+  "exclude": ["./node_modules", "./src/**/*.spec.ts"]
+}

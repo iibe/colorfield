@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json.schemastore.org/nodemon.json",
+  "verbose": true,
+  "ext": "ts,js,json",
+  "watch": ["./src/**"],
+  "ignore": ["./src/**/*.spec.ts"],
+  "exec": "rollup --config rollup.config.mjs"
+}
