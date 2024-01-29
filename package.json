@@ -2,7 +2,7 @@
   "name": "colorfield",
   "version": "1.0.0",
   "description": "Simplex noise flow field abstraction build on top of WebGL and HTML5 Canvas API.",
-  "main": "dist/colorfield.js",
+  "main": "./dist/colorfield.js",
   "author": "Roman Narvatov <kjiibe@gmail.com>",
   "license": "MIT",
   "private": true,
@@ -10,8 +10,8 @@
     "start": "npm run build",
     "build": "rollup --config rollup.config.mjs",
     "watch": "nodemon",
-    "lint": "npx prettier --check .",
-    "lint:fix": "npx prettier --write ."
+    "format": "npx prettier --check .",
+    "format:fix": "npx prettier --write ."
   },
   "keywords": [
     "simplex-noise"
